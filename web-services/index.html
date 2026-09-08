@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Services: Website Dibuat untuk Mengembangkan Bisnis Anda | REPLACE</title>
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="apple-touch-icon" href="../logo.png">
+<meta name="description" content="Web Services by REPLACE. Website profesional dan ramah tampilan HP, dibangun cepat dan dengan harga yang adil. Landing page, company profile, hingga toko online yang mengubah pengunjung menjadi pelanggan.">
+<meta name="keywords" content="jasa pembuatan website, jasa website murah, landing page, company profile, toko online, website UMKM, website desa, website sekolah, REPLACE, Web Services, Indonesia">
+<meta name="author" content="A. Rahman">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://replaceid.org/web-services/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="REPLACE">
+<meta property="og:title" content="Web Services: Website Dibuat untuk Mengembangkan Bisnis Anda">
+<meta property="og:description" content="Website profesional dan ramah tampilan HP, dibangun cepat dan dengan harga yang adil, dari landing page hingga toko online.">
+<meta property="og:url" content="https://replaceid.org/web-services/">
+<meta property="og:image" content="https://replaceid.org/hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Web Services: Website Dibuat untuk Mengembangkan Bisnis Anda">
+<meta name="twitter:description" content="Website profesional dan ramah tampilan HP, dibangun cepat dan dengan harga yang adil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root{
+    --ink:#16151f; --ink-soft:#3a3850; --muted:#6f6c84; --faint:#9b98ad; --line:#e6e3ef;
+    --paper:#f7f5fb; --white:#ffffff; --orange:#ff6a2c; --orange-soft:#ff8f4a;
+    --violet:#6d4dff; --violet-soft:#efeaff; --teal:#10a89e; --rose:#e0447a; --rose-soft:#fce4ee;
+    --display:"DM Sans",system-ui,sans-serif; --body:"DM Sans",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  img{max-width:100%}
+
+  .ws-demo-notice{background:#fff6e0;border-bottom:1px solid #f3dfa0;color:#8a6a12;
+    font-size:13px;text-align:center;padding:10px 20px;font-weight:600}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,245,251,.78);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);transition:box-shadow .3s,background .3s,border-color .3s}
+  nav.scrolled{background:rgba(247,245,251,.92);box-shadow:0 6px 28px -16px rgba(60,40,120,.32);border-color:transparent}
+  nav::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,var(--orange),var(--violet),var(--teal),var(--orange));
+    background-size:300% 100%;animation:flow 8s linear infinite;opacity:.9}
+  @keyframes flow{0%{background-position:0% 0}100%{background-position:300% 0}}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:70px;position:relative}
+  .logo{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.02em}
+  .logo .mark{width:36px;height:36px;object-fit:contain;display:block;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+  .logo:hover .mark{transform:rotate(-8deg) scale(1.12)}
+  .logo .brandtext{background:linear-gradient(120deg,var(--ink) 40%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-links{display:flex;gap:8px;align-items:center}
+  .nav-links a{position:relative;font-size:14.5px;font-weight:500;color:var(--ink-soft);padding:8px 14px;border-radius:8px;transition:color .18s,background .18s}
+  .nav-links a:not(.nav-cta):hover{color:var(--ink);background:rgba(109,77,255,.06)}
+  .nav-cta{background:linear-gradient(135deg,var(--orange),var(--orange-soft));color:#fff!important;
+    padding:10px 20px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:0 8px 20px -10px rgba(255,106,44,.7);transition:transform .18s,box-shadow .18s}
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(109,77,255,.7)}
+  .burger{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--ink)}
+  @media(max-width:900px){.nav-links{display:none}.burger{display:block}}
+
+  .hero{position:relative;padding:70px 0 76px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;
+    background:radial-gradient(620px 380px at 82% 8%,rgba(109,77,255,.12),transparent 70%),
+      radial-gradient(560px 360px at 6% 92%,rgba(255,106,44,.10),transparent 65%)}
+  .hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  @media(max-width:900px){.hero-in{grid-template-columns:1fr;gap:30px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--violet);background:var(--violet-soft);border:1px solid #ddd4ff;padding:7px 14px;border-radius:100px;margin-bottom:26px}
+  .eyebrow .pip{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:blink 1.6s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  h1.hero-title{font-family:var(--display);font-weight:800;letter-spacing:-.03em;font-size:clamp(34px,5.4vw,58px);line-height:1.06;color:var(--ink);max-width:16ch}
+  h1.hero-title .accent{color:var(--orange)}
+  .hero-sub{margin-top:24px;font-size:clamp(15.5px,1.8vw,18px);color:var(--ink-soft);max-width:50ch}
+  .hero-actions{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px;padding:14px 26px;border-radius:11px;cursor:pointer;transition:transform .15s,box-shadow .15s;border:none;font-family:var(--body)}
+  .btn-primary{background:linear-gradient(135deg,var(--orange),var(--orange-soft));color:#fff;box-shadow:0 12px 28px -12px rgba(255,106,44,.7)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(255,106,44,.8)}
+  .btn-ghost{background:var(--white);color:var(--ink);border:1px solid var(--line)}
+  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--violet);color:var(--violet)}
+  .hero-stats{margin-top:48px;display:flex;gap:34px;flex-wrap:wrap}
+  .stat .num{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-.02em;
+    background:linear-gradient(135deg,var(--ink),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .lbl{font-size:13px;color:var(--muted);margin-top:2px}
+
+  .ws-mock{position:relative}
+  .game-board{background:var(--white);border-radius:14px;overflow:hidden;position:relative;box-shadow:0 30px 60px -26px rgba(60,40,120,.35);animation:wsMockFloat 6s ease-in-out infinite}
+  @keyframes wsMockFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .ws-mock-badge{position:absolute;display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--white);box-shadow:0 16px 30px -12px rgba(60,40,120,.4);font-size:19px;z-index:2;animation:wsMockBadgeFloat 5s ease-in-out infinite}
+  .ws-mock-badge.b1{top:-20px;right:-20px;color:var(--orange);animation-delay:.2s}
+  .ws-mock-badge.b2{bottom:-16px;left:40px;color:var(--teal);animation-delay:1.6s}
+  .ws-mock-badge.b3{top:42%;left:-22px;color:var(--violet);animation-delay:1s}
+  @keyframes wsMockBadgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @media(prefers-reduced-motion:reduce){.game-board,.ws-mock-badge{animation:none}}
+  .win-bar{display:flex;align-items:center;gap:8px;padding:13px 16px;background:#f0eef5;border-bottom:1px solid #e2dfec}
+  .win-dots{display:flex;gap:7px}
+  .win-dot{width:12px;height:12px;border-radius:50%}
+  .win-dot.r{background:#ff5f57}.win-dot.y{background:#febc2e}.win-dot.g{background:#28c840}
+  .win-title{margin-left:10px;font-family:var(--mono);font-size:12.5px;color:#8a849c;font-weight:500}
+  .win-body{padding:18px}
+  .ws-mock-hero{height:80px;border-radius:10px;margin-bottom:14px;background:linear-gradient(120deg,var(--violet),var(--orange));opacity:.88}
+  .ws-mock-line{height:9px;border-radius:5px;background:#e7e3f5;margin-bottom:9px}
+  .ws-mock-line.w60{width:60%}.ws-mock-line.w80{width:85%}.ws-mock-line.w40{width:40%}
+  .ws-mock-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:16px}
+  .ws-mock-card{height:56px;border-radius:9px;background:#fff;border:1px solid var(--line)}
+  @media(max-width:900px){.hero .ws-mock{display:none}}
+
+  section.block{padding:80px 0}
+  .sec-head{margin-bottom:44px;max-width:64ch}
+  .sec-tag{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+  .sec-title{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.02em;line-height:1.12;color:var(--ink)}
+  .sec-desc{margin-top:16px;color:var(--ink-soft);font-size:16px;max-width:58ch}
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  :focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:6px}
+
+  /* CARDS */
+  .ws-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:880px){.ws-grid3{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.ws-grid3{grid-template-columns:1fr}}
+  .ws-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:960px){.ws-grid4{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.ws-grid4{grid-template-columns:1fr}}
+  .card{position:relative;background:var(--white);border:none;border-radius:18px;padding:28px 24px;
+    transition:transform .25s cubic-bezier(.2,.8,.3,1),box-shadow .25s,border-color .25s}
+  .card:hover{transform:translateY(-5px);box-shadow:0 28px 54px -26px rgba(40,30,80,.4);border-color:transparent}
+  .card .ic{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+  .card h3{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--muted);line-height:1.6}
+  .card .ws-note-link{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;color:var(--violet)}
+  #kenapa .card{border:none}
+  #kenapa .ws-grid3{row-gap:56px;column-gap:28px}
+  #kenapa .card{padding:76px 32px 40px;overflow:visible}
+  #kenapa .card .ic{position:absolute;top:-32px;left:32px;width:76px;height:76px;border-radius:20px;font-size:32px;margin:0;box-shadow:0 16px 30px -12px rgba(20,10,50,.2)}
+  #kenapa .card h3{font-size:20px;margin-bottom:12px}
+  #kenapa .card p{font-size:15px;line-height:1.75}
+
+  /* COMPANY PROFILE */
+  .ws-profile-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+  @media(max-width:820px){.ws-profile-grid{grid-template-columns:1fr;gap:34px}}
+  .ws-profile-text .sec-desc{margin-bottom:26px}
+  .ws-profile-tags{display:flex;flex-wrap:wrap;gap:10px}
+  .ws-profile-chip{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--ink);
+    background:var(--white);border:1px solid var(--line);border-radius:30px;padding:8px 15px}
+  .ws-profile-chip .dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+  .ws-profile-card{position:relative;overflow:hidden;border-radius:24px;padding:40px 36px;
+    background:linear-gradient(150deg,#1c1830,#241a42 55%,#1a1530);color:#fff;box-shadow:0 30px 60px -28px rgba(40,26,80,.55)}
+  .ws-profile-card h3{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-soft);margin-bottom:22px}
+  .ws-profile-row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .ws-profile-row:last-child{border-bottom:none}
+  .ws-profile-row .lbl{font-size:13.5px;color:#9794b0}
+  .ws-profile-row .val{font-size:14.5px;font-weight:600;color:#fff;text-align:right;max-width:60%}
+
+  /* VISION & MISSION */
+  .vision{background:var(--ink);color:#fff;border-radius:28px;padding:60px 48px;position:relative;overflow:hidden}
+  .vision::before{content:"";position:absolute;top:-140px;right:-100px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(109,77,255,.35),transparent 65%);filter:blur(10px)}
+  .vision::after{content:"";position:absolute;bottom:-160px;left:-100px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(255,106,44,.28),transparent 65%);filter:blur(10px)}
+  .vision-in{position:relative;z-index:1}
+  .vision .sec-tag{color:var(--orange-soft)}
+  .vision h2{font-family:var(--display);font-weight:700;font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;line-height:1.14;margin-bottom:36px;max-width:24ch}
+  .ws-vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+  @media(max-width:760px){.ws-vm-grid{grid-template-columns:1fr;gap:30px}}
+  .ws-vm-block h3{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.02em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+  .ws-vm-block p{color:#d7d4e8;font-size:15.5px;line-height:1.65;max-width:44ch}
+  .ws-vm-block ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .ws-vm-block li{display:flex;align-items:flex-start;gap:12px;color:#d7d4e8;font-size:15px;line-height:1.55}
+  .ws-vm-num{flex:none;font-family:var(--display);font-weight:800;font-size:14px;color:var(--orange-soft);
+    width:26px;height:26px;border-radius:50%;border:1.5px solid rgba(255,143,74,.5);display:grid;place-items:center;margin-top:1px}
+
+  /* PROCESS STEPS */
+  .ws-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:880px){.ws-steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.ws-steps{grid-template-columns:1fr}}
+  .ws-step{background:var(--white);border:none;border-radius:16px;padding:26px 22px;position:relative}
+  .ws-step-num{font-family:var(--display);font-weight:800;font-size:28px;color:var(--violet);opacity:.45;margin-bottom:10px}
+  .ws-step h3{font-family:var(--display);font-weight:700;font-size:16px;margin-bottom:8px}
+  .ws-step p{font-size:13.5px;color:var(--muted);line-height:1.55}
+  .ws-step::after{content:"";position:absolute;top:34px;right:-20px;width:20px;height:2px;background:var(--line)}
+  .ws-step:last-child::after{display:none}
+  @media(max-width:880px){.ws-step::after{display:none}}
+
+  /* PRICING */
+  .ws-note{display:flex;align-items:flex-start;gap:8px;font-family:var(--mono);font-size:12px;color:var(--faint);
+    border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-bottom:12px;max-width:640px}
+  .ws-notes-wrap{margin-bottom:32px}
+  .ws-pricing{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start}
+  @media(max-width:1100px){.ws-pricing{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.ws-pricing{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+  .ws-price-card{position:relative;background:var(--white);border:1.5px solid var(--line);border-radius:20px;
+    padding:34px 24px 26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+  .ws-pricing>.ws-price-card:nth-child(1){border-color:var(--violet)}
+  .ws-price-card.popular{border-color:var(--teal);box-shadow:0 30px 60px -30px rgba(16,168,158,.45);transform:translateY(-8px)}
+  .ws-pricing>.ws-price-card:nth-child(3){border-color:var(--rose)}
+  .ws-price-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;
+    background:linear-gradient(135deg,var(--violet),var(--teal));color:#fff;font-family:var(--mono);
+    font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 16px;border-radius:100px;
+    box-shadow:0 8px 18px -8px rgba(109,77,255,.7)}
+  .ws-price-name{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);margin-bottom:10px}
+  .ws-pricing>.ws-price-card:nth-child(2) .ws-price-name{color:var(--teal)}
+  .ws-pricing>.ws-price-card:nth-child(3) .ws-price-name{color:var(--rose)}
+  .ws-price-title{font-family:var(--display);font-weight:700;font-size:18px;margin-bottom:12px}
+  .ws-price-was{font-size:13px;color:var(--faint);text-decoration:line-through;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .ws-save-tag{text-decoration:none;display:inline-block;background:#e3f7f3;color:var(--teal);font-size:10.5px;font-weight:700;letter-spacing:.02em;padding:3px 9px;border-radius:20px}
+  .ws-pricing>.ws-price-card:nth-child(1) .ws-save-tag{background:var(--violet-soft);color:var(--violet)}
+  .ws-pricing>.ws-price-card:nth-child(3) .ws-save-tag{background:var(--rose-soft);color:var(--rose)}
+  .ws-price-amount{font-family:var(--display);font-weight:800;font-size:25px;letter-spacing:-.02em;margin-bottom:4px}
+  .ws-price-amount span{font-family:var(--body);font-weight:500;font-size:13px;color:var(--muted);margin-left:6px}
+  .ws-price-note{font-size:12.5px;font-weight:400;margin-bottom:20px}
+  .ws-pricing>.ws-price-card:nth-child(1) .ws-price-note{color:var(--violet)}
+  .ws-pricing>.ws-price-card:nth-child(2) .ws-price-note{color:var(--teal)}
+  .ws-pricing>.ws-price-card:nth-child(3) .ws-price-note{color:var(--rose)}
+  .ws-price-feat{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:0}
+  .ws-price-feat li{display:flex;align-items:flex-start;gap:9px;font-size:13.3px;color:var(--ink-soft);line-height:1.45}
+  .ws-price-feat li b{color:var(--ink)}
+  .ws-price-feat .chk{flex:none;width:17px;height:17px;border-radius:50%;background:var(--teal);color:#fff;
+    display:grid;place-items:center;font-size:9.5px;margin-top:1px}
+  .ws-pricing>.ws-price-card:nth-child(1) .ws-price-feat .chk{background:var(--violet)}
+  .ws-pricing>.ws-price-card:nth-child(3) .ws-price-feat .chk{background:var(--rose)}
+  .ws-price-foot{font-size:12px;color:var(--faint);border-top:1px solid var(--line);padding-top:14px;margin-bottom:18px}
+  .ws-price-card .btn{justify-content:center;width:100%}
+  .ws-price-toggle{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:var(--paper);
+    border:1px solid var(--line);border-radius:10px;padding:11px 16px;margin-bottom:18px;font-family:var(--body);
+    font-weight:600;font-size:13.5px;color:var(--ink-soft);cursor:pointer;transition:border-color .2s,color .2s}
+  .ws-price-toggle:hover{border-color:var(--violet);color:var(--violet)}
+  .ws-price-toggle-ic{flex:none;transition:transform .25s}
+  .ws-price-toggle[aria-expanded="true"] .ws-price-toggle-ic{transform:rotate(180deg)}
+  .ws-price-details{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .ws-price-details.open{max-height:900px}
+  .ws-price-card.custom{background:linear-gradient(150deg,#1c1830,#241a42 55%,#1a1530);border-color:var(--orange);box-shadow:0 30px 60px -28px rgba(40,26,80,.55)}
+  .ws-price-card.custom .ws-price-name{color:var(--orange-soft)}
+  .ws-price-card.custom .ws-price-title{color:#fff}
+  .ws-price-card.custom .ws-price-amount{color:#fff}
+  .ws-price-card.custom .ws-price-note{color:var(--orange-soft)}
+  .ws-price-card.custom .ws-price-feat .chk{background:var(--orange-soft)}
+  .ws-price-card.custom .ws-price-feat li{color:#d7d4e8}
+  .ws-price-card.custom .ws-price-feat li b{color:#fff}
+  .ws-price-card.custom .ws-price-foot{color:#9794b0;border-top-color:rgba(255,255,255,.14)}
+  .ws-price-card.custom .ws-price-toggle{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:#d7d4e8}
+  .ws-price-card.custom .ws-price-toggle:hover{border-color:var(--orange-soft);color:var(--orange-soft)}
+
+  /* PORTFOLIO */
+  .ws-portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:880px){.ws-portfolio{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.ws-portfolio{grid-template-columns:1fr}}
+  .ws-port-card{background:var(--white);border:none;border-radius:18px;overflow:hidden;
+    transition:transform .25s,box-shadow .25s}
+  .ws-port-card:hover{transform:translateY(-5px);box-shadow:0 26px 50px -26px rgba(40,30,80,.4)}
+  .ws-port-thumb{height:110px;display:flex;align-items:center;justify-content:center;font-size:28px}
+  .ws-port-thumb-img{background-size:cover;background-position:top center}
+  .ws-port-body{padding:18px 20px 20px}
+  .ws-port-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--violet);margin-bottom:8px;display:inline-block}
+  .ws-port-body h3{font-family:var(--display);font-weight:700;font-size:15.5px;margin-bottom:6px}
+  .ws-port-body p{font-size:13px;color:var(--muted);line-height:1.5}
+  .ws-port-demo{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10.5px;color:var(--faint);
+    border:1px dashed var(--line);padding:3px 9px;border-radius:6px}
+  .ws-port-live{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.02em;color:var(--violet);font-weight:600}
+  .ws-port-live i{font-size:9.5px}
+  .ws-port-thumb i{color:var(--ink);opacity:.6}
+
+  /* CTA */
+  .cta-band{text-align:center;padding:90px 0}
+  .cta-band h2{font-family:var(--display);font-weight:800;font-size:clamp(26px,4vw,42px);letter-spacing:-.025em;line-height:1.1;max-width:20ch;margin:0 auto 16px}
+  .cta-band p{color:var(--ink-soft);font-size:16.5px;max-width:48ch;margin:0 auto 30px}
+  .ws-contact-chips{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+  .ws-chip{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--line);
+    border-radius:14px;padding:14px 22px;font-weight:600;font-size:14.5px;color:var(--ink);transition:.2s}
+  .ws-chip:hover{border-color:var(--violet);transform:translateY(-2px);box-shadow:0 16px 30px -18px rgba(60,40,120,.4)}
+  .ws-chip .em{font-size:18px}
+  .ws-disclaimer{margin-top:26px;font-size:12px;color:var(--faint);max-width:54ch;margin-left:auto;margin-right:auto}
+
+  /* FOOTER */
+  footer{background:var(--ink);position:relative;overflow:hidden;padding:54px 0 38px}
+  footer::before{content:"";position:absolute;top:-140px;right:-100px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(109,77,255,.35),transparent 65%);filter:blur(10px)}
+  footer::after{content:"";position:absolute;bottom:-160px;left:-100px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(255,106,44,.28),transparent 65%);filter:blur(10px)}
+  footer .wrap{position:relative;z-index:1}
+  .foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:36px}
+  .foot-brand{max-width:300px}
+  .foot-brand p{color:rgba(255,255,255,.72);font-size:14px;margin-top:14px;line-height:1.6}
+  .foot-brand .logo .brandtext{background:linear-gradient(120deg,#fff 40%,var(--orange-soft));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .foot-col h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-soft);margin-bottom:14px}
+  .foot-col a{display:block;font-size:14.5px;color:rgba(255,255,255,.82);margin-bottom:10px;transition:color .15s}
+  .foot-col a:hover{color:var(--orange-soft)}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.62);font-family:var(--mono)}
+
+  /* FLOATING WHATSAPP */
+  .ws-float-wa{position:fixed;right:22px;bottom:22px;z-index:80;width:58px;height:58px;border-radius:50%;
+    background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 14px 30px -10px rgba(37,211,102,.65);transition:transform .2s,box-shadow .2s}
+  .ws-float-wa:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 18px 36px -8px rgba(37,211,102,.8)}
+  .ws-float-wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;opacity:.55;
+    animation:wsFloatPulse 2.2s ease-out infinite;z-index:-1}
+  @keyframes wsFloatPulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.7);opacity:0}}
+  .ws-float-badge{position:absolute;top:-4px;right:-4px;background:var(--orange);color:#fff;font-family:var(--mono);
+    font-size:8.5px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:2px 5px;border-radius:6px;
+    box-shadow:0 4px 10px -3px rgba(255,106,44,.8)}
+  @media(prefers-reduced-motion:reduce){.ws-float-wa::before{animation:none}}
+
+  .ws-back-top{position:fixed;right:22px;bottom:112px;z-index:80;width:58px;height:58px;border-radius:50%;
+    background:var(--ink);color:#fff;border:none;cursor:pointer;font-size:19px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px -10px rgba(22,21,31,.55);
+    opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:opacity .25s,transform .25s,visibility .25s,box-shadow .2s}
+  .ws-back-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+  .ws-back-top:hover{transform:translateY(-3px);box-shadow:0 18px 36px -8px rgba(22,21,31,.7)}
+  @media(prefers-reduced-motion:reduce){.ws-back-top{transition:opacity .01s,visibility .01s}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-in">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="REPLACE logo" class="mark"> <span class="brandtext">REPLACE</span></a>
+    <div class="nav-links">
+      <a href="#profil">Profil</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#paket">Paket</a>
+      <a href="#kontak" class="nav-cta">Konsultasi Gratis</a>
+    </div>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display='flex';this.style.display='none'"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <span class="eyebrow"><span class="pip"></span> Web Services, oleh REPLACE</span>
+      <h1 class="hero-title">Bangun <span class="accent">kredibilitas instan</span> &amp; maksimalkan pertumbuhan Anda di era digital.</h1>
+      <p class="hero-sub">Lebih dari sekadar desain yang memukau. Apapun model bisnis atau organisasi Anda, kami merancang arsitektur digital yang tidak hanya membangun kepercayaan secara instan, tetapi juga didesain khusus untuk mendatangkan hasil dan dampak nyata.</p>
+      <div class="hero-actions">
+        <a href="#kontak" class="btn btn-primary">Konsultasi Gratis →</a>
+        <a href="#paket" class="btn btn-ghost">Lihat Paket &amp; Harga</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">5 Hari</div><div class="lbl">Performa cepat dan andal</div></div>
+        <div class="stat"><div class="num">100%</div><div class="lbl">Sempurna di HP dan desktop</div></div>
+        <div class="stat"><div class="num">0</div><div class="lbl">Biaya siluman, kemitraan transparan</div></div>
+      </div>
+    </div>
+    <div class="ws-mock" aria-hidden="true">
+      <div class="ws-mock-badge b1"><i class="fa-solid fa-comment-dots"></i></div>
+      <div class="ws-mock-badge b2"><i class="fa-solid fa-bolt"></i></div>
+      <div class="ws-mock-badge b3"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="game-board">
+        <div class="win-bar">
+          <div class="win-dots"><span class="win-dot r"></span><span class="win-dot y"></span><span class="win-dot g"></span></div>
+          <span class="win-title">bisnisanda.com</span>
+        </div>
+        <div class="win-body">
+          <div class="ws-mock-hero"></div>
+          <div class="ws-mock-line w60"></div>
+          <div class="ws-mock-line w80"></div>
+          <div class="ws-mock-line w40"></div>
+          <div class="ws-mock-cards">
+            <div class="ws-mock-card"></div>
+            <div class="ws-mock-card"></div>
+            <div class="ws-mock-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COMPANY PROFILE -->
+<section class="block" id="profil" style="background:var(--white)">
+  <div class="wrap">
+    <div class="ws-profile-grid reveal">
+      <div class="ws-profile-text">
+        <div class="sec-tag">Profil perusahaan</div>
+        <h2 class="sec-title">Mitra transformasi digital lintas sektor &amp; industri.</h2>
+        <p class="sec-desc">Apapun bidang yang Anda jalankan, baik komersial, pelayanan publik, layanan jasa, maupun proyek mandiri berskala besar dan kecil, kami hadir sebagai solusi Anda. Kami memahami bahwa setiap entitas memiliki tujuan unik. Oleh karena itu, kami mengombinasikan desain premium, keamanan tingkat tinggi, dan fungsionalitas cerdas dalam satu platform website dengan harga yang tetap logis serta proses yang tidak berbelit.</p>
+        <div class="ws-profile-tags">
+          <span class="ws-profile-chip"><span class="dot" style="background:var(--orange)"></span>Desain website</span>
+          <span class="ws-profile-chip"><span class="dot" style="background:var(--violet)"></span>Pengembangan</span>
+          <span class="ws-profile-chip"><span class="dot" style="background:var(--teal)"></span>Dukungan berkelanjutan</span>
+        </div>
+      </div>
+      <div class="ws-profile-card">
+        <h3>Detail usaha</h3>
+        <div class="ws-profile-row"><span class="lbl">Nama usaha</span><span class="val">Web Services, by REPLACE</span></div>
+        <div class="ws-profile-row"><span class="lbl">Bidang usaha</span><span class="val">Desain website &amp; pengembangan aplikasi</span></div>
+        <div class="ws-profile-row"><span class="lbl">Wilayah layanan</span><span class="val">Bisa dikerjakan jarak jauh, seluruh Indonesia</span></div>
+        <div class="ws-profile-row"><span class="lbl">Ketentuan pembayaran</span><span class="val">DP 50%, sisanya saat selesai</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="block" id="layanan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Yang kami kerjakan</div>
+      <h2 class="sec-title">Solusi digital terintegrasi untuk kebutuhan apa pun.</h2>
+      <p class="sec-desc">Tidak ada pendekatan satu untuk semua. Kami menyesuaikan setiap baris kode dan elemen visual dengan objektif utama entitas Anda di berbagai bidang industri.</p>
+    </div>
+    <div class="ws-grid3">
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-rocket" style="color:var(--orange)"></i></div>
+        <h3>Landing Page</h3>
+        <p>Halaman arahan strategis dengan teknik penulisan persuasif. Pilihan ideal untuk kampanye produk, promosi layanan, rekrutmen, atau pengumpulan data calon pelanggan dengan tingkat keberhasilan maksimal.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:var(--violet-soft)"><i class="fa-solid fa-building" style="color:var(--violet)"></i></div>
+        <h3>Company Profile</h3>
+        <p>Tampil bonafide dan meyakinkan. Sampaikan visi, portofolio, dan keunggulan Anda dengan presentasi visual yang mampu memenangkan kepercayaan klien, publik, serta mitra strategis.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#e3f7f3"><i class="fa-solid fa-cart-shopping" style="color:var(--teal)"></i></div>
+        <h3>Toko Online</h3>
+        <p>Digitalisasi penjualan Anda secara menyeluruh. Kami membuat sistem belanja daring terintegrasi atau portal pembayaran yang aman, otomatis, dan beroperasi penuh sepanjang hari tanpa batas waktu.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-puzzle-piece" style="color:var(--orange)"></i></div>
+        <h3>Aplikasi Web Custom</h3>
+        <p>Solusi tepat untuk proses operasional yang kompleks. Jika Anda membutuhkan sistem pemesanan jadwal, dasbor keanggotaan, atau portal data internal, kami siap membangunnya dari nol sesuai dengan alur kerja Anda.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:var(--violet-soft)"><i class="fa-solid fa-magnifying-glass" style="color:var(--violet)"></i></div>
+        <h3>SEO Dasar</h3>
+        <p>Kami membangun fondasi yang kuat agar keberadaan Anda mudah dan cepat ditemukan di halaman Google oleh audiens yang tepat sasaran.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#e3f7f3"><i class="fa-solid fa-screwdriver-wrench" style="color:var(--teal)"></i></div>
+        <h3>Perawatan &amp; Pemeliharaan</h3>
+        <p>Anda cukup fokus pada kegiatan operasional utama. Kami memastikan performa server, pencadangan data, dan keamanan siber website Anda berjalan lancar setiap saat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="block" id="visi-misi" style="background:var(--white)">
+  <div class="wrap">
+    <div class="vision reveal">
+      <div class="vision-in">
+        <div class="sec-tag">Visi &amp; misi</div>
+        <h2>Dedikasi kami: mengakselerasi kemajuan Anda.</h2>
+        <div class="ws-vm-grid">
+          <div class="ws-vm-block">
+            <h3>Visi</h3>
+            <p>Menjadi mitra strategis terpercaya dalam menghadirkan solusi digital terbaik yang mendorong transformasi berbagai skala bisnis dan organisasi di seluruh Indonesia.</p>
+          </div>
+          <div class="ws-vm-block">
+            <h3>Misi</h3>
+            <ul>
+              <li><span class="ws-vm-num">1</span><span>Menghadirkan layanan pengembangan website yang inovatif, berkualitas premium, dan selalu berorientasi pada hasil nyata.</span></li>
+              <li><span class="ws-vm-num">2</span><span>Mendukung setiap entitas, mulai dari usaha rintisan kecil hingga lembaga berskala besar, dalam mencapai visibilitas serta kredibilitas daring yang maksimal.</span></li>
+              <li><span class="ws-vm-num">3</span><span>Mengutamakan kepuasan klien melalui pendekatan layanan yang cepat, akurat, dan selalu responsif terhadap setiap kebutuhan operasional.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="block" id="kenapa">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Mengapa memilih kami</div>
+      <h2 class="sec-title">Mengapa klien dari berbagai sektor memilih kami?</h2>
+      <p class="sec-desc">Kami adalah tim yang sama di balik aplikasi dan game REPLACE sendiri, jadi kami tahu apa yang dibutuhkan untuk membangun sesuatu yang benar-benar dipakai orang, bukan sekadar terlihat bagus di screenshot.</p>
+    </div>
+    <div class="ws-grid3">
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-bolt" style="color:var(--orange)"></i></div>
+        <h3>Estimasi waktu presisi</h3>
+        <p>Kami sangat menghargai waktu Anda. Website akan diluncurkan tepat waktu sesuai target yang telah disepakati bersama.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:var(--violet-soft)"><i class="fa-solid fa-sack-dollar" style="color:var(--violet)"></i></div>
+        <h3>Investasi transparan</h3>
+        <p>Kami menjamin kejelasan biaya secara penuh sejak awal sesi konsultasi. Aman untuk perencanaan anggaran operasional Anda, karena tidak akan ada tagihan mendadak di tengah proyek.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#e3f7f3"><i class="fa-solid fa-key" style="color:var(--teal)"></i></div>
+        <h3>Kepemilikan penuh, 100% hak Anda</h3>
+        <p>Kami tidak akan menyandera aset Anda. Kode sumber, aset digital, beserta otoritas domain akan diserahkan sepenuhnya kepada Anda saat proyek selesai.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-mobile-screen-button" style="color:var(--orange)"></i></div>
+        <h3>Desain ergonomis dan responsif</h3>
+        <p>Website dirancang dengan mengutamakan kemudahan pengguna. Tampilan akan tetap sempurna dan cepat diakses, dari perangkat layar kecil sampai monitor besar.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:var(--violet-soft)"><i class="fa-solid fa-handshake" style="color:var(--violet)"></i></div>
+        <h3>Garansi pendampingan teknis</h3>
+        <p>Anda tidak akan dibiarkan kebingungan setelah website selesai dibuat. Kami menyediakan panduan lengkap serta dukungan garansi operasional.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#e3f7f3"><i class="fa-solid fa-shop" style="color:var(--teal)"></i></div>
+        <h3>Kapasitas teknis tanpa batas</h3>
+        <p>Kami bukan sekadar merakit template desain instan. Tim kami terbiasa menangani logika sistem yang rumit untuk menjembatani kebutuhan unik organisasi Anda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="block" id="proses" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Bagaimana prosesnya</div>
+      <h2 class="sec-title">4 langkah efisien mewujudkan platform digital Anda.</h2>
+      <p class="sec-desc">Tanpa bolak-balik yang membingungkan. Berikut yang akan terjadi setelah Anda menghubungi kami.</p>
+    </div>
+    <div class="ws-steps">
+      <div class="ws-step reveal">
+        <div class="ws-step-num">01</div>
+        <h3>Diskusi dan pemetaan kebutuhan</h3>
+        <p>Mari berdiskusi santai mengenai tujuan utama Anda. Kami akan mendengarkan kebutuhan Anda, lalu menawarkan peta jalan digital yang paling efisien secara gratis.</p>
+      </div>
+      <div class="ws-step reveal">
+        <div class="ws-step-num">02</div>
+        <h3>Desain visual (pratinjau)</h3>
+        <p>Kami akan merancang tampilan antarmuka dan tata letak untuk Anda setujui terlebih dahulu. Tidak akan ada proses pemrograman sebelum desain benar-benar cocok dengan kriteria Anda.</p>
+      </div>
+      <div class="ws-step reveal">
+        <div class="ws-step-num">03</div>
+        <h3>Pengembangan dan pengujian</h3>
+        <p>Tim kami merakit sistem menggunakan kode yang bersih dan cepat. Anda dapat memantau perkembangannya, saat kami melakukan uji kelayakan secara menyeluruh.</p>
+      </div>
+      <div class="ws-step reveal">
+        <div class="ws-step-num">04</div>
+        <h3>Peluncuran dan serah terima</h3>
+        <p>Website Anda siap mengudara. Kami akan memberikan akses penuh, dokumen pendukung, dan panduan ringkas agar Anda bisa memegang kendali sepenuhnya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="block" id="paket">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Paket &amp; harga</div>
+      <h2 class="sec-title">Investasi fleksibel sesuai skala kebutuhan Anda.</h2>
+      <p class="sec-desc">Skema harga kami rasional dan jujur, dirancang khusus untuk memberikan keuntungan operasional yang maksimal bagi Anda.</p>
+    </div>
+    <div class="ws-notes-wrap">
+      <div class="ws-note"><i class="fa-solid fa-lightbulb"></i> <span>Bayar DP 50% di awal, lunas 50% sisanya setelah website selesai dan sesuai kesepakatan. Anda tidak perlu membayar penuh di depan.</span></div>
+    </div>
+    <div class="ws-pricing">
+      <div class="ws-price-card reveal">
+        <div class="ws-price-name">Starter</div>
+        <div class="ws-price-title">Landing Page</div>
+        <div class="ws-price-was">Rp1.750.000 <span class="ws-save-tag">Hemat Rp251.000</span></div>
+        <div class="ws-price-amount">Rp1.499.000</div>
+        <div class="ws-price-note">Paket ini cocok untuk Anda yang butuh website simpel dan siap pakai dalam waktu singkat, entah untuk kampanye, portofolio, atau pendaftaran acara.</div>
+        <button type="button" class="ws-price-toggle" aria-expanded="false" aria-controls="detail-starter">
+          <span>Detail Paket</span>
+          <svg class="ws-price-toggle-ic" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="ws-price-details" id="detail-starter">
+          <ul class="ws-price-feat">
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>1 halaman website, desain sesuai identitas bisnis Anda</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Tampilan responsif di HP, tablet, dan desktop</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Tombol WhatsApp terhubung langsung ke nomor Anda</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Formulir kontak terintegrasi</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Sertifikat keamanan SSL gratis</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Domain gratis tahun pertama</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Bandwidth tanpa batas</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Revisi 2 kali putaran</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Selesai dalam <b>sekitar 5 hari kerja</b></span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Garansi perbaikan bug 14 hari setelah website live</span></li>
+          </ul>
+        </div>
+        <div class="ws-price-foot">Perpanjangan mulai Rp250.000/tahun setelah tahun pertama</div>
+        <a href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20pilih%20paket%20Starter%20%28Landing%20Page%29." class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pilih Starter</a>
+      </div>
+      <div class="ws-price-card popular reveal">
+        <div class="ws-price-badge">Paling diminati</div>
+        <div class="ws-price-name">Growth</div>
+        <div class="ws-price-title">Company Profile</div>
+        <div class="ws-price-was">Rp3.999.000 <span class="ws-save-tag">Hemat Rp510.000</span></div>
+        <div class="ws-price-amount">Rp3.489.000</div>
+        <div class="ws-price-note">Paket ini ideal untuk Anda yang ingin tampil lebih resmi dan terpercaya di mata publik, sekaligus memperkuat reputasi bisnis atau organisasi Anda secara online.</div>
+        <button type="button" class="ws-price-toggle" aria-expanded="false" aria-controls="detail-growth">
+          <span>Detail Paket</span>
+          <svg class="ws-price-toggle-ic" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="ws-price-details" id="detail-growth">
+          <ul class="ws-price-feat">
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Hingga 5 halaman (beranda, tentang, layanan, galeri, kontak)</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Domain &amp; SSL gratis tahun pertama</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Bandwidth tanpa batas</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Pengaturan SEO dasar</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Galeri foto &amp; bagian testimoni</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Revisi 5 kali putaran</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Selesai dalam <b>sekitar 10 hari kerja</b></span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Garansi perbaikan bug 14 hari setelah website live</span></li>
+          </ul>
+        </div>
+        <div class="ws-price-foot">Perpanjangan mulai Rp450.000/tahun setelah tahun pertama</div>
+        <a href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20pilih%20paket%20Growth%20%28Company%20Profile%29." class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pilih Growth</a>
+      </div>
+      <div class="ws-price-card reveal">
+        <div class="ws-price-name">Pro</div>
+        <div class="ws-price-title">UMKM, Toko Online &amp; Instansi</div>
+        <div class="ws-price-was">Rp5.500.000 <span class="ws-save-tag">Hemat Rp502.000</span></div>
+        <div class="ws-price-amount">Mulai dari Rp4.998.000</div>
+        <div class="ws-price-note">Paket ini cocok untuk Anda yang menjalankan UMKM, toko online, website desa, sekolah/kampus, hingga instansi yang butuh sistem digital terintegrasi dan siap berkembang.</div>
+        <button type="button" class="ws-price-toggle" aria-expanded="false" aria-controls="detail-pro">
+          <span>Detail Paket</span>
+          <svg class="ws-price-toggle-ic" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="ws-price-details" id="detail-pro">
+          <ul class="ws-price-feat">
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Cocok untuk toko online, website desa, sekolah/kampus, instansi, atau tour guide</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Hingga 10 halaman atau kategori produk</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Domain &amp; SSL gratis tahun pertama</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Bandwidth tanpa batas</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Formulir pemesanan atau pendaftaran sesuai kebutuhan</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Revisi 5 kali putaran</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Selesai dalam <b>sekitar 2 hingga 3 minggu</b></span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Garansi perbaikan bug 30 hari setelah website live</span></li>
+          </ul>
+        </div>
+        <div class="ws-price-foot">Perpanjangan mulai Rp650.000/tahun setelah tahun pertama</div>
+        <a href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20pilih%20paket%20Pro%20%28UMKM%2C%20Toko%20Online%20%26%20Instansi%29." class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Pilih Pro</a>
+      </div>
+      <div class="ws-price-card custom reveal">
+        <div class="ws-price-name">Custom Project</div>
+        <div class="ws-price-title">Solusi Sesuai Kebutuhan Anda</div>
+        <div class="ws-price-amount" style="font-size:22px">Hubungi Kami</div>
+        <div class="ws-price-note">Paket ini ideal untuk Anda yang membutuhkan sistem, aplikasi, atau platform yang dibangun sepenuhnya dari nol, sesuai kebutuhan spesifik bisnis atau organisasi Anda.</div>
+        <button type="button" class="ws-price-toggle" aria-expanded="false" aria-controls="detail-custom">
+          <span>Detail Paket</span>
+          <svg class="ws-price-toggle-ic" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="ws-price-details" id="detail-custom">
+          <ul class="ws-price-feat">
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Dikerjakan sepenuhnya custom, sesuai kebutuhan spesifik Anda</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Cocok untuk sistem booking, marketplace, dashboard, atau aplikasi internal</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Integrasi dengan sistem atau layanan pihak ketiga</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Arsitektur dan fitur dirancang dari awal bersama tim kami</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Jumlah revisi disepakati sesuai cakupan proyek</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Estimasi waktu pengerjaan disampaikan setelah konsultasi</span></li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span> <span>Pendampingan penuh dari perencanaan hingga peluncuran</span></li>
+          </ul>
+        </div>
+        <div class="ws-price-foot">Harga dan skema pembayaran ditentukan setelah konsultasi</div>
+        <a href="#kontak" class="btn btn-primary">Konsultasi Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL MARKETING ADD-ONS -->
+<section class="block" id="marketing" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Berkembang lebih dari sekadar website</div>
+      <h2 class="sec-title">Amplifikasi digital, tingkatkan jangkauan Anda.</h2>
+      <p class="sec-desc">Platform yang hebat tentu membutuhkan lalu lintas pengunjung. Saat Anda sudah siap memperbesar skala jangkauan audiens, kami telah menyediakan layanan pendukungnya.</p>
+    </div>
+    <div class="ws-grid4">
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-magnifying-glass-chart" style="color:var(--orange)"></i></div>
+        <h3>SEO Bergaransi</h3>
+        <p>Strategi ampuh agar nama Anda mendominasi halaman pertama pencarian organik di Google untuk jangka panjang.</p>
+        <a class="ws-note-link" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20layanan%20SEO%20Bergaransi." target="_blank" rel="noopener">Minta penawaran →</a>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:var(--violet-soft)"><i class="fa-solid fa-bullhorn" style="color:var(--violet)"></i></div>
+        <h3>Google Ads</h3>
+        <p>Raih klik instan dari audiens yang memang sedang aktif mencari layanan atau informasi mengenai bidang Anda hari ini.</p>
+        <a class="ws-note-link" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20layanan%20Google%20Ads." target="_blank" rel="noopener">Minta penawaran →</a>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#e3f7f3"><i class="fa-solid fa-share-nodes" style="color:var(--teal)"></i></div>
+        <h3>Iklan Media Sosial</h3>
+        <p>Distribusi informasi strategis lewat iklan tertarget di Instagram, Facebook, dan TikTok, untuk menyaring calon mitra atau pelanggan potensial secara akurat.</p>
+        <a class="ws-note-link" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20layanan%20Iklan%20Media%20Sosial." target="_blank" rel="noopener">Minta penawaran →</a>
+      </div>
+      <div class="card reveal">
+        <div class="ic" style="background:#fff1e8"><i class="fa-solid fa-palette" style="color:var(--orange)"></i></div>
+        <h3>Konten &amp; Branding</h3>
+        <p>Copywriting, aset visual, dan gaya komunikasi brand yang konsisten di website dan kanal media sosial Anda.</p>
+        <a class="ws-note-link" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20layanan%20Konten%20%26%20Branding." target="_blank" rel="noopener">Minta penawaran →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="block" id="portofolio">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Pilihan gaya website</div>
+      <h2 class="sec-title">Pilih gaya website yang paling cocok untuk Anda.</h2>
+      <p class="sec-desc">Setiap kategori berikut punya contoh tampilan live yang bisa Anda lihat langsung. Pilih gaya yang paling sesuai dengan kebutuhan Anda, lalu kami sesuaikan sepenuhnya dengan identitas bisnis atau organisasi Anda.</p>
+    </div>
+    <div class="ws-portfolio">
+      <a href="https://wdthms.wpengine.com/fintech-services/" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/home-2-ss.jpg')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>Bisnis &amp; Company Profile</h3>
+          <p>Tampilan profesional untuk memperkenalkan perusahaan, layanan, dan kredibilitas bisnis Anda.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+      <a href="https://styler.ninetheme.com/home-2-full-screen-slider/?opt=h21" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/landing-pages-32-768x544.png')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>UMKM &amp; Toko Online</h3>
+          <p>Katalog produk dan sistem belanja online untuk UMKM dan toko yang ingin jualan lebih luas.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+      <a href="https://demo.goodlayers.com/kingster/homepage-2/" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/landing-hp2.jpg')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>Edukasi (Sekolah, Kampus &amp; Kursus)</h3>
+          <p>Website informatif untuk lembaga pendidikan, lengkap dengan info program dan pendaftaran.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+      <a href="https://roam.qodeinteractive.com/mountaineering-home/" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/landing-img-2.jpg')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>Pariwisata &amp; Travel</h3>
+          <p>Tampilan visual dan menarik untuk destinasi wisata, agen perjalanan, atau penginapan.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+      <a href="https://themes.themegoods.com/grandrestaurantv6/home-2/" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/Grand-Restaurant.jpg')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>Restoran &amp; Kuliner</h3>
+          <p>Halaman menu dan galeri foto yang menggugah selera untuk restoran atau usaha kuliner.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+      <a href="https://demo.themnific.com/citygovmulti/civic-association/" target="_blank" rel="noopener" class="ws-port-card reveal">
+        <div class="ws-port-thumb ws-port-thumb-img" style="background-image:url('../demo/citygov-association-screenshot-1024x768.jpg')"></div>
+        <div class="ws-port-body">
+          <span class="ws-port-tag">Kategori</span>
+          <h3>Pemerintahan &amp; Desa</h3>
+          <p>Website informasi resmi untuk instansi pemerintahan, kelurahan, atau website desa.</p>
+          <span class="ws-port-live">Lihat Demo Live <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section class="cta-band reveal" id="kontak" style="background:var(--white)">
+  <div class="wrap">
+    <h2>Jangan tunda peningkatan reputasi digital Anda.</h2>
+    <p>Di era modern ini, keberadaan digital yang kuat bukan lagi sekadar pilihan, melainkan sebuah keharusan. Jadwalkan sesi diskusi gratis bersama tim kami sekarang juga. Mari kita rancang bersama arsitektur website yang akan menjadi aset paling berharga bagi kelancaran operasional dan pertumbuhan Anda ke depannya.</p>
+    <div class="ws-contact-chips">
+      <a class="ws-chip" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20pembuatan%20website" target="_blank" rel="noopener">
+        <span class="em"><i class="fa-brands fa-whatsapp" style="color:#25d366"></i></span> Chat via WhatsApp
+      </a>
+      <a class="ws-chip" href="mailto:rahman.poland.ce21@gmail.com">
+        <span class="em"><i class="fa-solid fa-envelope"></i></span> Kirim Email
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="logo"><img src="../logo.png" alt="REPLACE logo" class="mark"> <span class="brandtext">REPLACE</span></a>
+        <p>Web Services adalah studio desain dan pengembangan website milik REPLACE: website profesional, dikerjakan cepat dan dengan harga yang adil.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Web Services</h4>
+        <a href="#profil">Profil perusahaan</a>
+        <a href="#layanan">Layanan kami</a>
+        <a href="#paket">Harga</a>
+        <a href="#kontak">Konsultasi gratis</a>
+      </div>
+      <div class="foot-col">
+        <h4>REPLACE Institute</h4>
+        <a href="../index.html">Beranda</a>
+        <a href="../index.html#produk">Produk</a>
+        <a href="../index.html#tentang">Tentang</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 REPLACE Institute. All Rights Reserved.</span>
+      <span>replaceid.org</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="ws-float-wa" href="https://wa.me/6287753935810?text=Halo%20Web%20Services%2C%20saya%20mau%20tanya%20soal%20pembuatan%20website" target="_blank" rel="noopener" aria-label="Chat via WhatsApp" title="Chat via WhatsApp">
+  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+<button type="button" class="ws-back-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script>
+  var navEl=document.querySelector("nav");
+  function onScroll(){ if(window.scrollY>20)navEl.classList.add("scrolled");else navEl.classList.remove("scrolled"); }
+  window.addEventListener("scroll",onScroll,{passive:true});
+  onScroll();
+
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);} });
+  },{threshold:.14});
+  document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+
+  document.querySelectorAll(".ws-price-toggle").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var panel=document.getElementById(btn.getAttribute("aria-controls"));
+      var open=btn.getAttribute("aria-expanded")==="true";
+      btn.setAttribute("aria-expanded",open?"false":"true");
+      if(panel){ panel.classList.toggle("open",!open); }
+    });
+  });
+
+  var backTopEl=document.querySelector(".ws-back-top");
+  function onScrollBackTop(){ if(window.scrollY>400)backTopEl.classList.add("show");else backTopEl.classList.remove("show"); }
+  window.addEventListener("scroll",onScrollBackTop,{passive:true});
+  onScrollBackTop();
+  backTopEl.addEventListener("click",function(){ window.scrollTo({top:0,behavior:"smooth"}); });
+</script>
+
+</body>
+</html>
