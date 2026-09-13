@@ -872,6 +872,28 @@ body.fly-focus .pixel-root{display:none}
 .ws-mock-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:16px}
 .ws-mock-card{height:52px;border-radius:9px;background:#fff;border:1px solid var(--line)}
 @media(max-width:900px){.ws-banner{grid-template-columns:1fr;padding:34px 26px}.ws-mock{display:none}}
+
+  /* MOBILE MENU (baru) */
+  .mobile-menu-backdrop{position:fixed;inset:0;background:rgba(22,21,31,.55);opacity:0;visibility:hidden;
+    transition:opacity .3s ease,visibility .3s ease;z-index:99}
+  .mobile-menu-backdrop.open{opacity:1;visibility:visible}
+  .mobile-menu{position:fixed;top:0;right:0;bottom:0;width:82%;max-width:340px;background:var(--white);
+    z-index:100;box-shadow:-20px 0 50px -20px rgba(22,21,31,.35);
+    transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.8,.3,1);
+    display:flex;flex-direction:column;padding:24px 26px 32px;overflow-y:auto}
+  .mobile-menu.open{transform:translateX(0)}
+  .mobile-menu-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}
+  .mobile-menu-close{background:none;border:none;cursor:pointer;font-size:28px;line-height:1;color:var(--ink);padding:4px 8px}
+  .mobile-menu-links{display:flex;flex-direction:column;gap:4px;margin-bottom:28px}
+  .mobile-menu-links a{font-family:var(--display);font-size:19px;font-weight:600;color:var(--ink);
+    padding:14px 4px;border-bottom:1px solid var(--line);transition:color .18s}
+  .mobile-menu-links a:hover{color:var(--violet)}
+  .mobile-menu-links a.mobile-lang-switch{display:flex;align-items:center;gap:8px;font-size:16px;color:var(--ink-soft)}
+  .mobile-menu-cta{display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--orange),var(--orange-soft));color:#fff!important;
+    padding:15px 20px;border-radius:12px;font-size:15.5px;font-weight:700;text-align:center;
+    box-shadow:0 12px 26px -12px rgba(255,106,44,.7);margin-top:auto}
+  @media(min-width:761px){.mobile-menu,.mobile-menu-backdrop{display:none}}
 </style>
 </head>
 <body>
@@ -890,7 +912,7 @@ body.fly-focus .pixel-root{display:none}
       <a href="./id.html" class="lang-switch"><span class="globe">🌐</span> ID</a>
       <a href="#produk" class="nav-cta">View Products</a>
     </div>
-    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display='flex';this.style.display='none'">☰</button>
+    <button class="burger" aria-label="Menu" onclick="openMobileMenu()">☰</button>
   </div>
 </nav>
 
@@ -966,13 +988,13 @@ body.fly-focus .pixel-root{display:none}
   <div class="wrap">
     <div class="ws-banner reveal">
       <div class="ws-banner-text">
-        <span class="ws-badge"><span class="dotpulse"></span> New from REPLACE</span>
+        <span class="ws-badge"><span class="dotpulse"></span> Web Services by REPLACE</span>
         <h2>Need a website that actually brings in customers?</h2>
-        <p>Introducing <b>Web Services</b> — our web design &amp; development studio. We turn your business into a fast, professional, mobile-friendly website built to convert visitors into customers, not just look pretty.</p>
+        <p>Introducing <b>Web Services</b>, our web design &amp; development studio. We turn your business into a fast, professional, mobile-friendly website built to convert visitors into customers, not just look pretty.</p>
         <ul class="ws-points">
           <li><span class="ws-check">✓</span> <span>Launch-ready in <b>as little as 5 days</b>, not months</span></li>
           <li><span class="ws-check">✓</span> <span>Mobile-first, SEO-friendly, and <b>built to load fast</b></span></li>
-          <li><span class="ws-check">✓</span> <span>Transparent packages — <b>no hidden fees</b>, ever</span></li>
+          <li><span class="ws-check">✓</span> <span>Transparent packages: <b>no hidden fees</b>, ever</span></li>
         </ul>
         <div class="hero-actions">
           <a href="./web-services/" class="btn btn-primary">Explore Web Services →</a>
@@ -3421,5 +3443,35 @@ function loadScore(k){try{return parseInt(localStorage.getItem("replace_"+k))||0
   })();
 
 </script>
+
+<!-- MOBILE MENU OVERLAY (baru) -->
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" onclick="closeMobileMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <a href="#" class="logo"><img src="./logo.png" alt="REPLACE logo" class="mark"> <span class="brandtext">REPLACE</span></a>
+    <button class="mobile-menu-close" aria-label="Close menu" onclick="closeMobileMenu()">&times;</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="#produk" onclick="closeMobileMenu()">Products</a>
+    <a href="#games" onclick="closeMobileMenu()">Games</a>
+    <a href="#visi" onclick="closeMobileMenu()">Vision</a>
+    <a href="#tentang" onclick="closeMobileMenu()">About</a>
+    <a href="#tulisan" onclick="closeMobileMenu()">Writing</a>
+    <a href="./web-services/" onclick="closeMobileMenu()">Web Services</a>
+    <a href="./id.html" class="mobile-lang-switch" onclick="closeMobileMenu()"><span class="globe">🌐</span> ID</a>
+  </div>
+  <a href="#produk" class="mobile-menu-cta" onclick="closeMobileMenu()">View Products</a>
+</div>
+<script>
+  function openMobileMenu(){
+    document.getElementById('mobileMenu').classList.add('open');
+    document.getElementById('mobileMenuBackdrop').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeMobileMenu(){
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.getElementById('mobileMenuBackdrop').classList.remove('open');
+    document.body.style.overflow='';
+  }
+</script>
 </body>
-</html>
